@@ -15,12 +15,15 @@ body {
 #formulario {
     background-color: #017849;
 }
+
 #formularioCadastrar{
     color:#017849;
 }
+
 label {
     margin-right: 55%;
 }
+
 #labelSenha{
     margin-right: 38%;
 }
@@ -28,6 +31,7 @@ label {
     background-color: #017849;
     font-weight: bold;
 }
+
 #botaoEntrar{
     background-color: #017849;
     border: 2px solid white;
@@ -44,9 +48,11 @@ label {
     width: 240px;
     margin-left: 185px;
 }
+
 .input-group {
     margin-left: 50%;
 }
+
 #inputpesquisar {
     width: 300px;
 }
@@ -57,24 +63,27 @@ label {
 #btnfiltrar {
     width: 150px;
 }
+
 .modal-header h1{
     color: #017849;
     font-weight: bold;
     
 }
+
 .modal-body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
 
 .modal-body label{
     color: #017849;
 }
+
 h3 {
     color: #017849;
 }
+
 h5 {
     color: #017849;
 }
@@ -92,17 +101,21 @@ h5 {
     font-size: 20px;
     color:#017849;
 }
+
 .th {
     color: #2F80ED;
 }
+
 #modalsucesso {
     width: 400px;
     height: 200px;
 }
+
 #modalexcluido {
     width: 400px;
     height: 200px;
 }
+
 #check img{
     width: 100px;
     margin-left: 50%;
@@ -113,6 +126,7 @@ h5 {
     margin-top: 10%;
     color: #017849;
 }
+
 h6{
     color: #017849;
 }
@@ -124,7 +138,6 @@ h6{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }  
-    
 
 #cardsection {
     position: relative;
@@ -140,13 +153,12 @@ h6{
     
 }
 
-
-
 #imgcardone {
     position: absolute;
     top: 8%;
     width: 30px;
 }
+
 #imgcard {
     position: absolute;
     width: 30px;
@@ -158,20 +170,6 @@ h6{
     top: 8%;
     width: 30px;
 }
-
-/* #linhavertical {
-    position:relative;
-    height: 20px;
-    border-left: 3px solid #2F80ED;;
-    margin-left: 5%;
-} */
-
-/* #linhaverticalgreen {
-    height: 77px;
-    border-left: 3px solid #017849;
-    margin-left: 27.35%;
-    margin-top: 23%;
-} */
 
 #lnhafilter {
     width: 75%;
@@ -192,7 +190,6 @@ h6{
 #topo{
     color:#017849;
     font-size: 15px;
-
 }
 
 
