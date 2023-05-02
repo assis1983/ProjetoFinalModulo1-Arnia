@@ -9,7 +9,7 @@
       "sexo": "Feminino",
       "profissao": "Professora",
       "mae": "Terezinha de Fátima",
-      "dataNacimento": "",
+      "dataNacimento": "2023-05-02",
       "nacionalidade": "Brasileiro",
       "escolaridade": "Superior Completo",
       "pai": "Osvaldo",
@@ -89,6 +89,21 @@
       "escolaridade": "Superior Completo",
       "pai": "Osvaldo Assis",
       "id": 14
+    },
+    {
+      "name": "José Henrique Mazarin",
+      "cpf": "30682163899",
+      "email": "jose@terra.com.br",
+      "civil": "Casado(a)",
+      "naturalidade": "Adamantina",
+      "sexo": "Maculino",
+      "profissao": "Jogador de Futebol",
+      "mae": "Daiane Mazarin",
+      "dataNacimento": "2010-03-25",
+      "nacionalidade": "Brasileiro",
+      "escolaridade": "Superior Completo",
+      "pai": "Eder Roberto de Assis",
+      "id": 19
     }
   ]
 }

@@ -39,14 +39,14 @@ label {
     font-size: 20px;
     height: 60px;
 }
-#botaoProximo {
+#botaoProximo{
     background-color: #017849;
-    border: 2px solid white;
+    /* border: 2px solid white;
     border-radius: 10px;
     font-size: 20px;
     height: 60px;
     width: 240px;
-    margin-left: 185px;
+    margin-left: 185px; */
 }
 
 .input-group {
