@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    background-color: #E5E5E5;
+}
+
+#imgbackground {
+    background-repeat: no-repeat; 
+    background-position: 10px; 
+    height: 800px;
+}
+
+#formulario {
+    background-color: #017849;
+}
+#formularioCadastrar{
+    color:#017849;
+}
+label {
+    margin-right: 55%;
+}
+#labelSenha{
+    margin-right: 38%;
+}
+.btn {
+    background-color: #017849;
+    font-weight: bold;
+}
+#botaoEntrar{
+    background-color: #017849;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 60px;
+}
+#botaoProximo {
+    background-color: #017849;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 60px;
+    width: 240px;
+    margin-left: 185px;
+}
+.input-group {
+    margin-left: 50%;
+}
+#inputpesquisar {
+    width: 300px;
+}
+#inputpesquisarpront {
+    width: 300px;
+}    
+
+#btnfiltrar {
+    width: 150px;
+}
+.modal-header h1{
+    color: #017849;
+    font-weight: bold;
+    
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.modal-body label{
+    color: #017849;
+}
+h3 {
+    color: #017849;
+}
+h5 {
+    color: #017849;
+}
+#staticBackdrop{
+    width: 100%;
+    height: 999px;
+}
+
+.select{
+    width: 90%;
+    height: 50px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color:#017849;
+}
+.th {
+    color: #2F80ED;
+}
+#modalsucesso {
+    width: 400px;
+    height: 200px;
+}
+#modalexcluido {
+    width: 400px;
+    height: 200px;
+}
+#check img{
+    width: 100px;
+    margin-left: 50%;
+}
+#msgsucesso {
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 10%;
+    color: #017849;
+}
+h6{
+    color: #017849;
+}
+
+#textareasection{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}  
+    
+
+#cardsection {
+    position: relative;
+    
+}
+
+#cardsectiontwo {
+    position: relative;
+}
+
+#cardsectionthree {
+    position:relative;
+    
+}
+
+
+
+#imgcardone {
+    position: absolute;
+    top: 8%;
+    width: 30px;
+}
+#imgcard {
+    position: absolute;
+    width: 30px;
+    top: 25px;
+}
+
+#imgcardthree {
+    position: absolute;
+    top: 8%;
+    width: 30px;
+}
+
+/* #linhavertical {
+    position:relative;
+    height: 20px;
+    border-left: 3px solid #2F80ED;;
+    margin-left: 5%;
+} */
+
+/* #linhaverticalgreen {
+    height: 77px;
+    border-left: 3px solid #017849;
+    margin-left: 27.35%;
+    margin-top: 23%;
+} */
+
+#lnhafilter {
+    width: 75%;
+}
+
+.dropdownone {
+    margin-left: 95%;
+}
+
+#card {
+    border-left: 5px solid #017849;
+}
+
+#cardtwo {
+    border-left: 5px solid #2F80ED;
+}
+
+#topo{
+    color:#017849;
+    font-size: 15px;
+
+}
+
+
+
