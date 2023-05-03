@@ -1,3 +1,5 @@
+const nome = document.querySelector('#inputNameCadastro')
+const email = document.querySelector('#inputEmailCadastro')
 const botao_Atualizar = document.querySelector('#btnatualizar')
 const nomePaciente = document.querySelector('#inputNome')
 const cpfPaciente = document.querySelector('#inputCpf')
@@ -49,10 +51,22 @@ function recarregarAPagina(){
   window.location.reload();
 }
 
-
 async function visualizarDados() {
   return fetch('http://localhost:3000/pacientes') 
 }
+
+const cadastrar_User = async () => {
+  const nome_cadastrar = nome.value
+  const email_cadastrar = email.value
+  console.log(nome_cadastrar)
+
+  const post_Cadastro = {
+    "namecadastro": nome_cadastrar,
+    "emailcadastro": email_cadastrar
+  }
+  await postDados(post_Cadastro)
+}
+
 
 window.addEventListener('DOMContentLoaded', async (e) => {
   const response = await visualizarDados()
@@ -63,11 +77,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     <th scope="col" class="border border-3 text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#visualizarDados" class="text-muted data-toggle="tooltip" data-placement="right" title="Visualizar Dados" style="text-decoration: none;" onclick="visualizarInfo(${element.id})">${element.id}</a></th>
     <th scope="col" class="border border-3"><a href="#" data-bs-toggle="modal" data-bs-target="#visualizarDados" class="text-muted data-toggle="tooltip" data-placement="right" title="Visualizar Dados" style="text-decoration: none;" onclick="visualizarInfo(${element.id})">${element.name}</a></th>
     <th scope="col" class="border border-3"><a href="#" data-bs-toggle="modal" data-bs-target="#visualizarDados" class="text-muted data-toggle="tooltip" data-placement="right" title="Visualizar Dados" style="text-decoration: none;" onclick="visualizarInfo(${element.id})">${element.cpf}</a></th>
-    <th scope="col" class="border border-3"><a href="#" data-bs-toggle="modal" data-bs-target="#visualizarDados" class="text-muted data-toggle="tooltip" data-placement="right" title="Visualizar Dados" style="text-decoration: none;" onclick="visualizarInfo(${element.id})">${element.email}</a></th>
     <th scope="col" class="d-flex justify-content-between border border-2">
-      <a href="prontuario.html?user=${element.id}" style="text-decoration: none;" data-toggle="tooltip" data-placement="right" title="Visualizar Prontuário"><i class="fa-regular fa-pen-to-square mx-1" style="color: #014e31;"></i></a>
-      <a href="#" data-bs-toggle="modal" data-bs-target="#modalEditar" style="text-decoration: none;"data-toggle="tooltip" data-placement="right" title="Editar Dados do Paciente" onclick="editDados(${element.id})"><i class="fa-solid fa-pencil mx-1" style="color: #405aef;"></i></a>
-      <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropexcluido" style="text-decoration: none;" data-toggle="tooltip" data-placement="right" title="Excluir Paciente" onclick="deleteUser(${element.id})"><i class="fa-sharp fa-solid fa-trash mx-1" style="color: #f62a07;"></i></a>
+      <a href="prontuario.html?user=${element.id}" style="text-decoration: none;" data-toggle="tooltip" data-placement="right" title="Visualizar Prontuário"><i class="fa-regular fa-pen-to-square" style="color: #014e31;"></i></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modalEditar" style="text-decoration: none;"data-toggle="tooltip" data-placement="right" title="Editar Dados do Paciente" onclick="editDados(${element.id})"><i class="fa-solid fa-pencil" style="color: #405aef;"></i></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropexcluido" style="text-decoration: none;" data-toggle="tooltip" data-placement="right" title="Excluir Paciente" onclick="deleteUser(${element.id})"><i class="fa-sharp fa-solid fa-trash" style="color: #f62a07;"></i></a>
     </th>`
     }
   })

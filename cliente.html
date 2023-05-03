@@ -29,15 +29,14 @@
     <div class="container fluid col-10 p-1">
       <h5 class="h-6 fw-bold">Meus Pacientes</h5>
     </div>
-  <div id="container" class="container-fluid col-10 bg-white rounded-4">   
+  <div id="container" class="container bg-white rounded-4">   
       <nav class="navbar" id="navegador">
-        <div class="container-fluid p-3">
-          <button type="button" class="btn btn-outline-success text-white rounded-4" data-toggle="tooltip" data-placement="right" title="Cadastrar Novo Paciente" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-plus mx-2"></i>Novo Cadastro</button>
-          <div id="grupopesquisar" class="d-flex pl-3">
-            <input id="inputpesquisar" name="filtro" type="text" class="rounded border border-2 form-control rounded-end rounded-4" placeholder="Pesquisar" aria-label="pesquisar" aria-describedby="basic-addon2" data-toggle="tooltip" data-placement="left" title="Filtra Dados">
-            <button class="btn btn-outline-success text-white rounded-start rounded-5" id="btnfiltrar" type="submit" data-toggle="tooltip" data-placement="right" title="Filtra Dados">
-              <i class="fa-solid fa-magnifying-glass mx-2"></i>
-              Filtrar</button>
+        <div class="container p-3">
+          <button type="button" class="btn btn-outline-success text-white rounded-4 shadow" data-toggle="tooltip" data-placement="right" title="Cadastrar Novo Paciente" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-plus mx-2"></i>Novo Cadastro</button>
+          <div id="grupopesquisar" class="d-flex w-50 ">
+            <input id="inputpesquisar" name="filtro" type="text" class="w-50 rounded border border-2 form-control rounded-end rounded-4 shadow" placeholder="Pesquisar" aria-label="pesquisar" aria-describedby="basic-addon2" data-toggle="tooltip" data-placement="left" title="Filtra Dados">
+            <button class="w-25 btn btn-outline-success text-white rounded-start rounded-5 shadow" id="btnfiltrar" type="submit" data-toggle="tooltip" data-placement="right" title="Filtra Dados">
+              <i class="fa-solid fa-magnifying-glass mx-2"></i>Filtrar</button>
           </div>
         </div>
       </nav>
@@ -54,13 +53,13 @@
               <div class="d-flex shadow-lg">
                   <div class="modal-body">
                       <label for="nome">Nome</label>
-                      <input id="inputNome" class="rounded border border-2 form-control-lg form-control mb-3" type="text"   name="nome" placeholder="Digite" required autofocus>
+                      <input id="inputNome" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text"   name="nome" placeholder="Digite" required autofocus>
                       <label>CPF</label>
-                      <input id="inputCpf" class="rounded border border-2 form-control-lg form-control form-control mb-3" type="text" minlenght="11" maxlength="11" name="cpf" placeholder="Digite" required autofocus>
+                      <input id="inputCpf" class="rounded border border-2 form-control-lg form-control form-control mb-3 shadow" type="text" minlenght="11" maxlength="11" name="cpf" placeholder="Digite" required autofocus>
                       <label>Email</label>
-                      <input id="inputEmail" class="rounded border border-2 form-control-lg form-control mb-3" type="email" placeholder="Digite" required>
+                      <input id="inputEmail" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="email" placeholder="Digite" required>
                       <label>Estado Civil</label>
-                      <select  id="select" class="form-select rounded border border-2 form-control-lg form-control mb-3">
+                      <select  id="select" class="form-select rounded border border-2 form-control-lg form-control mb-3 shadow">
                         <option value="Nenhuma das opções">Nenhuma das opções</option>
                         <option value="Casado(a)">Casado(a)</option>
                         <option value="Solteiro(a)">Solteiro(a)</option>
@@ -69,23 +68,23 @@
                   </div>
                   <div class="modal-body">
                       <label>Naturalidade</label>
-                      <input id="inputNatural"  class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" required>
+                      <input id="inputNatural"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required>
                       <label>Sexo</label>
-                      <select id="selectsexo"class="form-select rounded border border-2 form-control-lg form-control mb-3">
+                      <select id="selectsexo"class="form-select rounded border border-2 form-control-lg form-control mb-3 v">
                         <option value="Nenhuma das opções">Nenhuma das opções</option>
                         <option value="Maculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
                       </select>
                       <label>Profissão</label>
-                      <input id="inputProfissao"  class="rounded border border-2 form-control-lg form-control mb-3" class="form-control" type="text" placeholder="Digite" required>
+                      <input id="inputProfissao"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" class="form-control" type="text" placeholder="Digite" required>
                       <label>Nome da Mãe</label>
-                      <input id="inputNomeMae"  class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" required autofocus >
+                      <input id="inputNomeMae"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required autofocus >
                   </div>
                   <div class="modal-body">
                       <label>Nascimento</label>
-                      <input id="inputNascimento" class="rounded border border-2 form-control-lg form-control mb-3" class="form-control" type="date" placeholder="Digite" required>
+                      <input id="inputNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" class="form-control" type="date" placeholder="Digite" required>
                       <label>Nacionalidade</label>
-                      <select id="selectNacionalidade"class="form-select rounded border border-2 form-control-lg form-control mb-3">
+                      <select id="selectNacionalidade"class="form-select rounded border border-2 form-control-lg form-control mb-3 shadow">
                         <option value="Nenhuma das opções">Nenhuma das opções</option>
                         <option value="Brasileiro">Brasileiro</option>
                         <option value="Americano">Americano</option>
@@ -95,15 +94,15 @@
                         <option value="Japonês">Japonês</option>
                       </select>
                       <label>Escolaridade</label>
-                      <input id="inputEscolaridade" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" required>
+                      <input id="inputEscolaridade" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required>
                       <label>Nome do Pai</label>
-                      <input id="inputNomePai" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" required>
+                      <input id="inputNomePai" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required>
                   </div>
               </div>
               <div class="modal-footer">
                 <div class="col-12 mt-7"><em>*Campos obrigatórios</em></div>
-                <button type="button" class="btn btn-outline-success text-black bg-white border-white rounded-4" data-bs-dismiss="modal">Cancelar</button>
-                <button id="salvar" type="submit" class="col-2 btn btn-outline-success text-white rounded-4" data-bs-toggle="modal" data-bs-target="#staticBackdropsucesso" data-toggle="tooltip" data-placement="right" title="Adicionar Novo Paciente">Criar</button>
+                <button type="button" class="btn btn-outline-success text-black bg-white border-white rounded-4 shadow" data-bs-dismiss="modal">Cancelar</button>
+                <button id="salvar" type="submit" class="col-2 btn btn-outline-success text-white rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#staticBackdropsucesso" data-toggle="tooltip" data-placement="right" title="Adicionar Novo Paciente">Criar</button>
               </div>
             </form>
           </div>
@@ -125,7 +124,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
+              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4 shadow" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
             </div>
           </div>
         </div>
@@ -146,7 +145,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
+              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4 shadow" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
             </div>
           </div>
         </div>
@@ -164,38 +163,38 @@
             <div class="d-flex shadow-lg"> 
               <div class="modal-body">
                 <label>Nome</label>
-                <input id="inputNomevisual" class=" col-12 rounded border border-2 form-control-lg mb-3" type="text" disabled required >
+                <input id="inputNomevisual" class=" col-12 rounded border border-2 form-control-lg mb-3 shadow" type="text" disabled required >
                 <label>CPF</label>
-                <input id="visualCpf" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="number" disabled required>
+                <input id="visualCpf" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="number" disabled required>
                 <label>Email</label>
-                <input id="visualemail" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualemail" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Estado Civil</label>
-                <input id="visualcivil" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualcivil" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
               </div>
               <div class="modal-body">
                 <label>Naturalidade</label>
-                <input id="visualnaturalidade" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualnaturalidade" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Sexo</label>
-                <input id="visualsexo" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualsexo" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Profissão</label>
-                <input id="visualprofissao" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualprofissao" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Nome da Mãe</label>
-                <input id="visualmae" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualmae" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
               </div>
               <div class="modal-body">
                 <label>Nascimento</label>
-                <input id="visualdata" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualdata" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Nacionalidade</label>
-                <input id="visualnacionalidade" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualnacionalidade" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Escolaridade</label>
-                <input id="visualescolaridade" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualescolaridade" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
                 <label>Nome do Pai</label>
-                <input id="visualpai" class="col-12 rounded border border-2 form-control-lg mb-3" class="form-control" type="email" disabled required>
+                <input id="visualpai" class="col-12 rounded border border-2 form-control-lg mb-3 shadow" class="form-control" type="email" disabled required>
               </div>
 
             </div>   
               <div class="modal-footer">
-                <button type="button" class="col-2 btn btn-outline-success text-white rounded-4" arial label="close" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="col-2 btn btn-outline-success text-white rounded-4 shadow" arial label="close" data-bs-dismiss="modal">Fechar</button>
               </div>
             </div>
         </div>
@@ -216,7 +215,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
+              <button type="button" class="align-self-center mx-auto col-sm-4 btn btn-outline-success text-white rounded-4 shadow" data-bs-dismiss="modal" onclick="recarregarAPagina()">OK</button>
             </div>
           </div>
         </div>
@@ -233,13 +232,13 @@
             <div class="d-flex">
               <div class="modal-body">
                   <label>Nome</label>
-                  <input id="atualizarNome" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="atualizarNome" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" aria-label="Search" required>
                   <label>CPF</label>
-                  <input id="atualizarCpf"  class="rounded border border-2 form-control-lg form-control mb-3" type="number" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="atualizarCpf"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="number" placeholder="Digite" aria-label="Search" required>
                   <label>Email</label>
-                  <input id="atualizarEmail"  class="rounded border border-2 form-control-lg form-control mb-3" type="email" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="atualizarEmail"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="email" placeholder="Digite" aria-label="Search" required>
                   <label>Estado Civil</label>
-                  <select  id="atualizarestadoselect" class="form-select rounded border border-2 mb-3">
+                  <select  id="atualizarestadoselect" class="form-select rounded border border-2 mb-3 shadow">
                     <option value="Nenhuma das opções">Nenhuma das opções</option>
                     <option value="Casado(a)">Casado(a)</option>
                     <option value="Solteiro(a)">Solteiro(a)</option>
@@ -247,23 +246,23 @@
               </div>
               <div class="modal-body">
                   <label>Naturalidade</label>
-                  <input id="inpuatualizarNatural" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inpuatualizarNatural" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" aria-label="Search" required autofocus >
                   <label>Sexo</label>
-                  <select id="selectatualizasexo"class=" form-select rounded border border-2 form-control-lg mb-3" clas="form-control" required autofocus>
+                  <select id="selectatualizasexo"class=" form-select rounded border border-2 form-control-lg mb-3 shadow" clas="form-control" required autofocus>
                     <option value="Nenhuma das opções">Nenhuma das opções</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option>
                   </select>
                   <label>Profissão</label>
-                  <input id="inputatualizaProfissao" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaProfissao" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" aria-label="Search" required autofocus >
                   <label>Nome da Mãe</label>
-                  <input id="inputatualizaNomeMae" class="rounded border border-2 form-control-lg form-control mb-3" type="text" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaNomeMae" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" aria-label="Search" required autofocus >
               </div>
               <div class="modal-body">
                   <label>Nascimento</label>
-                  <input id="inputatualizaNascimento" class="rounded border border-2 form-control-lg form-control mb-3" type="date" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="date" placeholder="Digite" aria-label="Search" required autofocus >
                   <label>Nacionalidade</label>
-                  <select id="selectatualizanacionalidade" class="form-select rounded border border-2 form-control-lg mb-3" required autofocus>
+                  <select id="selectatualizanacionalidade" class="form-select rounded border border-2 form-control-lg mb-3 shadow" required autofocus>
                     <option value="0">Nenhuma das opções</option>
                     <option value="Brasileiro">Brasileiro</option>
                     <option value="Americano">Americano</option>
@@ -273,15 +272,15 @@
                     <option value="Japonês">Japonês</option>
                   </select>
                   <label>Escolaridade</label>
-                  <input id="inputatualizaEscolaridade" class="rounded border border-2 form-control-lg form-control mb-3" type="search" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaEscolaridade" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="search" placeholder="Digite" aria-label="Search" required autofocus >
                   <label>Nome do Pai</label>
-                  <input id="inputatualizaNomePai" class="rounded border border-2 form-control-lg form-control mb-3" type="search" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaNomePai" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="search" placeholder="Digite" aria-label="Search" required autofocus >
               </div>
             </div>
             <div class="modal-footer shadow-lg">
               <div class="col-12 mt-7"><em>*Campos obrigatórios</em></div>
-                <button type="button" class="btn btn-outline-success text-black bg-white border-white rounded-4" data-bs-dismiss="modal">Cancelar</button>
-                <button id="btnatualizar"type="button" class="btn btn-outline-success text-white rounded-4" data-bs-toggle="modal" data-bs-target="#staticBackdropAtualizado">Salvar Alterações</button>
+                <button type="button" class="btn btn-outline-success text-black bg-white border-white rounded-4 shadow" data-bs-dismiss="modal">Cancelar</button>
+                <button id="btnatualizar"type="button" class="btn btn-outline-success text-white rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#staticBackdropAtualizado">Salvar Alterações</button>
             </div>
         </div>
       </div>
@@ -291,11 +290,11 @@
     <table id="tabela" class="table table-bordered table table-hover shadow-lg rounded border border-5">
         <thead>
           <tr class="th border border-3">
-            <th scope="col" class="text-center border border-3">Código</th>
-            <th scope="col" class="border border-3 text-center">Nome</th>
-            <th scope="col" class="border border-3 text-center">CPF</th>
-            <th scope="col" class="border border-3 text-center">Email</th>
-            <th scope="col" class="text-center">Ações</th>
+            <th scope="col" class="border border-3 text-center">Código</th>
+            <th scope="col" class="border border-3">Nome</th>
+            <th scope="col" class="border border-3">CPF</th>
+            <!--th scope="col" class="border border-3 text-center">Email</th>-->
+            <th scope="col" class="">Ações</th>
           </tr>
         </thead>
     </table>

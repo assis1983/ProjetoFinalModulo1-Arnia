@@ -27,6 +27,7 @@ label {
 #labelSenha{
     margin-right: 38%;
 }
+
 .btn {
     background-color: #017849;
     font-weight: bold;
@@ -41,33 +42,15 @@ label {
 }
 #botaoProximo{
     background-color: #017849;
-    /* border: 2px solid white;
-    border-radius: 10px;
-    font-size: 20px;
-    height: 60px;
-    width: 240px;
-    margin-left: 185px; */
 }
 
 .input-group {
     margin-left: 50%;
 }
 
-#inputpesquisar {
-    width: 300px;
-}
-#inputpesquisarpront {
-    width: 300px;
-}    
-
-#btnfiltrar {
-    width: 150px;
-}
-
 .modal-header h1{
     color: #017849;
     font-weight: bold;
-    
 }
 
 .modal-body{
@@ -87,6 +70,7 @@ h3 {
 h5 {
     color: #017849;
 }
+
 #staticBackdrop{
     width: 100%;
     height: 999px;
@@ -120,6 +104,7 @@ h5 {
     width: 100px;
     margin-left: 50%;
 }
+
 #msgsucesso {
     width: 100%;
     margin-left: 15%;
@@ -141,7 +126,6 @@ h6{
 
 #cardsection {
     position: relative;
-    
 }
 
 #cardsectiontwo {
