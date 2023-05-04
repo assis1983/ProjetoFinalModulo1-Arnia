@@ -19,13 +19,13 @@
       "name": "Daiane Mazarin",
       "cpf": "33544397854",
       "email": "ftdaianemazarin@hotmail.com",
-      "civil": "1",
+      "civil": "Casado(a)",
       "naturalidade": "Adamantina",
-      "sexo": "2",
+      "sexo": "Masculino",
       "profissao": "Fisioterapeuta",
       "mae": "Denise",
-      "dataNacimento": "1990-10-01",
-      "nacionalidade": "1",
+      "dataNacimento": "",
+      "nacionalidade": "Brasileiro",
       "escolaridade": "Superior Completo",
       "pai": "Claudinei",
       "id": 13
@@ -84,8 +84,8 @@
       "sexo": "Masculino",
       "profissao": "Desenvolvedor Web",
       "mae": "Terezinha de Fátima",
-      "dataNacimento": "1983-08-11",
-      "nacionalidade": "Nenhuma das opções",
+      "dataNacimento": "",
+      "nacionalidade": "Brasileiro",
       "escolaridade": "Superior Completo",
       "pai": "Osvaldo Assis",
       "id": 14
@@ -104,6 +104,36 @@
       "escolaridade": "Superior Completo",
       "pai": "Eder Roberto de Assis",
       "id": 19
+    },
+    {
+      "name": "Rafael Mazarin",
+      "cpf": "33544397854",
+      "email": "assis.ederjd@gmail.com",
+      "civil": "Casado(a)",
+      "naturalidade": "Adamantina",
+      "sexo": "Masculino",
+      "profissao": "Advogado",
+      "mae": "Denise",
+      "dataNacimento": "",
+      "nacionalidade": "Brasileiro",
+      "escolaridade": "Superior Completo",
+      "pai": "Claudinei",
+      "id": 20
+    },
+    {
+      "name": "Franciele da Clínica",
+      "cpf": "30682163899",
+      "email": "franciele@uol.com.br",
+      "civil": "Solteiro(a)",
+      "naturalidade": "Adamantina",
+      "sexo": "Feminino",
+      "profissao": "Fisioterapeuta",
+      "mae": "Daiane Mazarin",
+      "dataNacimento": "2010-03-25",
+      "nacionalidade": "Brasileiro",
+      "escolaridade": "Superior Completo",
+      "pai": "Guerino Seiscentos",
+      "id": 21
     }
   ]
 }

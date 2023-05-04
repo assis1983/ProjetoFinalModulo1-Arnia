@@ -53,9 +53,9 @@
               <div class="d-flex shadow-lg">
                   <div class="modal-body">
                       <label for="nome">Nome</label>
-                      <input id="inputNome" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text"   name="nome" placeholder="Digite" required autofocus>
+                      <input id="inputNome" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text"  name="text" placeholder="Digite" required>
                       <label>CPF</label>
-                      <input id="inputCpf" class="rounded border border-2 form-control-lg form-control form-control mb-3 shadow" type="text" minlenght="11" maxlength="11" name="cpf" placeholder="Digite" required autofocus>
+                      <input id="inputCpf" class="rounded border border-2 form-control-lg form-control form-control mb-3 shadow" type="text" minlenght="11" maxlength="11" name="cpf" placeholder="Digite" required>
                       <label>Email</label>
                       <input id="inputEmail" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="email" placeholder="Digite" required>
                       <label>Estado Civil</label>
@@ -78,11 +78,11 @@
                       <label>Profissão</label>
                       <input id="inputProfissao"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" class="form-control" type="text" placeholder="Digite" required>
                       <label>Nome da Mãe</label>
-                      <input id="inputNomeMae"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required autofocus >
+                      <input id="inputNomeMae"  class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="text" placeholder="Digite" required="required">
                   </div>
                   <div class="modal-body">
                       <label>Nascimento</label>
-                      <input id="inputNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" class="form-control" type="date" placeholder="Digite" required>
+                      <input id="inputNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" class="form-control" type="date" placeholder="dia/mês/ano" required>
                       <label>Nacionalidade</label>
                       <select id="selectNacionalidade"class="form-select rounded border border-2 form-control-lg form-control mb-3 shadow">
                         <option value="Nenhuma das opções">Nenhuma das opções</option>
@@ -260,7 +260,7 @@
               </div>
               <div class="modal-body">
                   <label>Nascimento</label>
-                  <input id="inputatualizaNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="date" placeholder="Digite" aria-label="Search" required autofocus >
+                  <input id="inputatualizaNascimento" class="rounded border border-2 form-control-lg form-control mb-3 shadow" type="date" placeholder="Dia/Mês/Ano" aria-label="Search" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                   <label>Nacionalidade</label>
                   <select id="selectatualizanacionalidade" class="form-select rounded border border-2 form-control-lg mb-3 shadow" required autofocus>
                     <option value="0">Nenhuma das opções</option>
