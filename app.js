@@ -20,7 +20,7 @@ const filtro = document.querySelector('#inputpesquisar')
 const enviar_filtro = document.querySelector('#btnfiltrar') 
 
 async function postDados(info) {
-  return fetch('http://localhost:3000/pacientes', {
+  return fetch('https://dbjson-service-pacientes.onrender.com/pacientes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ async function postDados(info) {
 }
 
 const putPost = async (id, post) => {
-  await fetch(`http://localhost:3000/pacientes/${id}`, {
+  await fetch(`https://dbjson-service-pacientes.onrender.com/pacientes/${id}`, {
     method: "PUT",
     headers: {
       'Accept': 'application/json, text/plain, */*',
@@ -42,7 +42,7 @@ const putPost = async (id, post) => {
 }
 
 const deleteUser = async (id) => {
-  await fetch(`http://localhost:3000/pacientes/${id}`, {
+  await fetch(`https://dbjson-service-pacientes.onrender.com/pacientes/${id}`, {
     method: "DELETE"
   })
 }
@@ -52,7 +52,7 @@ function recarregarAPagina(){
 }
 
 async function visualizarDados() {
-  return fetch('http://localhost:3000/pacientes') 
+  return fetch('https://dbjson-service-pacientes.onrender.com/pacientes') 
 }
 
 const cadastrar_User = async () => {
@@ -123,7 +123,7 @@ form?.addEventListener('submit',  async (e) => {
 form?.reset()
 
 async function editDados(id) {
-  const response = await fetch(`http://localhost:3000/pacientes/${id}`)
+  const response = await fetch(`https://dbjson-service-pacientes.onrender.com/pacientes/${id}`)
   const dados = await response.json()
   document.querySelector('#atualizarNome').value = dados.name
   document.querySelector('#atualizarCpf').value = dados.cpf
@@ -163,7 +163,7 @@ botao_Atualizar?.addEventListener('click', async (e) => {
 })
 
 async function visualizarInfo (id) { 
-  const apiResposta = await fetch(`http://localhost:3000/pacientes/${id}`)
+  const apiResposta = await fetch(`https://dbjson-service-pacientes.onrender.com/pacientes/${id}`)
   const posts = await apiResposta.json()
   document.querySelector('#inputNomevisual').value = posts.name
   document.querySelector('#visualCpf').value = posts.cpf
@@ -185,7 +185,7 @@ enviar_filtro.addEventListener('click', async (event) => {
 event.preventDefault()
 const dados_filtro = filtro.value
 console.log(dados_filtro)
-const response = await fetch(`http://localhost:3000/pacientes?q=${dados_filtro}`)
+const response = await fetch(`https://dbjson-service-pacientes.onrender.com/pacientes?q=${dados_filtro}`)
 console.log(response)
 const dadosFiltrados = await response.json()
 console.log(dadosFiltrados)
