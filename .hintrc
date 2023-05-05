@@ -38,6 +38,7 @@
       {
         "duplicate-id": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }

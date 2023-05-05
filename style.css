@@ -112,7 +112,7 @@ h5 {
     color: #017849;
 }
 
-h6{
+h6 {
     color: #017849;
 }
 
@@ -139,19 +139,19 @@ h6{
 
 #imgcardone {
     position: absolute;
-    top: 8%;
+    top: -7%;
     width: 30px;
 }
 
 #imgcard {
     position: absolute;
     width: 30px;
-    top: 25px;
+    top: -7%;
 }
 
 #imgcardthree {
     position: absolute;
-    top: 8%;
+    top: -7%;
     width: 30px;
 }
 
