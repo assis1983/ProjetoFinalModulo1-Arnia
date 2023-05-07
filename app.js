@@ -55,18 +55,7 @@ async function visualizarDados() {
   return fetch('https://dbjson-service-pacientes.onrender.com/pacientes') 
 }
 
-const cadastrar_User = async () => {
-  const nome_cadastrar = nome.value
-  const email_cadastrar = email.value
-  console.log(nome_cadastrar)
-
-  const post_Cadastro = {
-    "namecadastro": nome_cadastrar,
-    "emailcadastro": email_cadastrar
-  }
-  await postDados(post_Cadastro)
-}
-
+console.log(visualizarDados())
 
 window.addEventListener('DOMContentLoaded', async (e) => {
   const response = await visualizarDados()
@@ -181,7 +170,7 @@ async function visualizarInfo (id) {
   
 }
 
-enviar_filtro.addEventListener('click', async (event) => {
+enviar_filtro?.addEventListener('click', async (event) => {
 event.preventDefault()
 const dados_filtro = filtro.value
 console.log(dados_filtro)

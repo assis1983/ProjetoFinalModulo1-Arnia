@@ -135,5 +135,49 @@
       "pai": "Guerino Seiscentos",
       "id": 21
     }
+  ],
+  "cadastro": [
+    {
+      "nameCadastro": "Eder Roberto de Assis",
+      "emailCadastro": "assis.ederjd@gmail.com",
+      "senha": "123456789",
+      "confirmsenha": "123456789",
+      "id": 1
+    },
+    {
+      "nameCadastro": "José Mazarin",
+      "emailCadastro": "jose@terra.com.br",
+      "senha": "jh665564",
+      "confirmsenha": "jh665564",
+      "id": 2
+    },
+    {
+      "nameCadastro": "rafael@globo.com",
+      "emailCadastro": "rafael@globo.com",
+      "senha": "123456789",
+      "confirmsenha": "123456789",
+      "id": 3
+    },
+    {
+      "nameCadastro": "anapaula@uol.com.br",
+      "emailCadastro": "anapaula@uol.com.br",
+      "senha": "25032010",
+      "confirmsenha": "25032010",
+      "id": 4
+    },
+    {
+      "nameCadastro": "Marrone@terra.com.br",
+      "emailCadastro": "Marrone@terra.com.br",
+      "senha": "010024415",
+      "confirmsenha": "010024415",
+      "id": 5
+    },
+    {
+      "nameCadastro": "pitoco@terra.com.br",
+      "emailCadastro": "pitoco@terra.com.br",
+      "senha": "010024415",
+      "confirmsenha": "010024415",
+      "id": 6
+    }
   ]
 }
