@@ -32,7 +32,7 @@ const formCadastrar = document.getElementById('formulariocadastrar')
     const email = document.getElementById('inputemailcadastro').value
     if(!nome || !email){
         alert('Por favor Informe Nome e Email!')
-        return
+        
     }
 })
 

@@ -8,8 +8,11 @@ loginForm.addEventListener('submit', async (event) => {
     cadastro.forEach(element => {
       if (element.emailCadastro === email && element.senha === senha) {
          window.location.href = 'cliente.html'
+         if (!email && !senha) {
+          alert('Por favor informar email e senha!')
       }
-    })
+    }
+  })
 })
  
 
