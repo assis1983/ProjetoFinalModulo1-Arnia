@@ -20,12 +20,12 @@ body {
     color:#017849;
 }
 
-label {
-    margin-right: 55%;
+#inputEmail {
+    background-color: #f0f4f9;
 }
 
-#labelSenha{
-    margin-right: 38%;
+#inputPassword {
+    background-color: #f0f4f9;
 }
 
 .btn {
