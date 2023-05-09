@@ -171,10 +171,6 @@ h6 {
     border-left: 5px solid #2F80ED;
 }
 
-#select:focus {
-    color: #017849;
-}
-
 #topo{
     color:#017849;
     font-size: 15px;
