@@ -5,16 +5,15 @@ loginForm.addEventListener('submit', async (event) => {
     const senha = document.getElementById('inputsenha').value;
     const resposta = await fetch ('https://dbjson-service-pacientes.onrender.com/cadastro')
     const cadastro = await resposta.json()
-    cadastro.forEach(element => {
-      if (element.emailCadastro === email && element.senha === senha) {
-         window.location.href = 'cliente.html'
-         if (!email && !senha) {
-          alert('Por favor informar email e senha!')
+    cadastro.filter(element => {
+      if (element.emailCadastro === email) {
+         if (element.senha === senha)
+          window.location.href ="cliente.html"
+      } else {
+        alert('Login ou Senha Inválidos')
       }
-    }
+    })
   })
-})
- 
 
 
  
